@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagenes/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href=".reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4142e58b2f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador de Miguel</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/Vector.png" alt="logo Alura" >
+    </header>
+    <main>
+        <section>
+            <textarea class="textIn" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="info"><i class="fa-solid fa-circle-exclamation fa-1x"></i>Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="textOut" cols="20" rows="10"></textarea>
+            <div>
+                <button class="btn-copiar" onclick="copiado()">Copiar</button>
+            </div>
+        </section>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>
